@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'feed_pets_screen.dart';
 import 'affirmation_screen.dart';
 import 'water_intake_screen.dart';
 import 'calming_session_screen.dart';
@@ -48,7 +48,7 @@ class HomeScreen extends StatefulWidget {
     _WidgetSpec('Learning Bits', Icons.menu_book_outlined),
     _WidgetSpec('Top News', Icons.article_outlined, screen: const TopNewsScreen()),
     _WidgetSpec('Stock Option', Icons.show_chart),
-    _WidgetSpec('Feed the Pets', Icons.pets),
+    _WidgetSpec('Feed the Pets', Icons.pets, screen: const FeedPetsScreen()),
     _WidgetSpec('Wellness Toolkit', Icons.favorite_border),
   ];
 }
