@@ -6,6 +6,9 @@ import 'water_intake_screen.dart';
 import 'calming_session_screen.dart';
 import 'habit_kicker_screen.dart';
 import 'top_news_screen.dart';
+import 'wellness_toolkit_screen.dart';
+import 'notes_transcribe_screen.dart';
+
 
 
 
@@ -49,7 +52,9 @@ class HomeScreen extends StatefulWidget {
     _WidgetSpec('Top News', Icons.article_outlined, screen: const TopNewsScreen()),
     _WidgetSpec('Stock Option', Icons.show_chart),
     _WidgetSpec('Feed the Pets', Icons.pets, screen: const FeedPetsScreen()),
-    _WidgetSpec('Wellness Toolkit', Icons.favorite_border),
+    _WidgetSpec('Wellness Toolkit', Icons.favorite_border, screen: const WellnessToolkitScreen()),
+    _WidgetSpec('Notes / Transcribe', Icons.mic_none, screen: const NotesTranscribeScreen()),
+
   ];
 }
 
