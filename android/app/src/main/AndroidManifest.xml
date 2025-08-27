@@ -1,37 +1,43 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.widget_packs_app">
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.widget_packs_app">
 
-    <!-- Permissions go here (direct children of <manifest>) -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <!-- Mic permission for Notes/Transcribe -->
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
-    <!-- OPTIONAL: Only if you want to declare querying Speech services -->
-    <queries>
-        <intent>
-            <action android:name="android.speech.RecognitionService" />
-        </intent>
-    </queries>
+        <!-- Optional: remove if not actually querying external speech services -->
+        <queries>
+            <intent>
+                <action android:name="android.speech.RecognitionService" />
+            </intent>
+        </queries>
 
-    <application
-        android:label="widget_packs_app"
-        android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="false"
-        android:allowBackup="true"
-        android:supportsRtl="true">
+        <application
+            android:label="@string/app_name"
+            android:allowBackup="true"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="false"
+            android:dataExtractionRules="@xml/backup_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher">   <!-- match the regular icon -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|density"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
+
+            <meta-data android:name="flutterEmbedding" android:value="2" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <!-- Keep any existing provider/meta-data entries here -->
-    </application>
-</manifest>
+        </application>
+    </manifest>
+
