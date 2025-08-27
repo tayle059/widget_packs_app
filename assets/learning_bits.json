@@ -1,0 +1,25 @@
+[
+  {"id":"astro_1","category":"Science","title":"Why the sky is blue","body":"Short wavelengths (blue) scatter more in the atmosphere (Rayleigh scattering), so the sky looks blue."},
+  {"id":"astro_2","category":"Science","title":"A day on Venus","body":"Venus rotates so slowly that one Venus day is longer than its year."},
+
+  {"id":"bio_1","category":"Biology","title":"Your second brain","body":"Your gut has ~500 million neurons (enteric nervous system) that communicate with the brain via the vagus nerve."},
+  {"id":"bio_2","category":"Biology","title":"Why fingers wrinkle","body":"Skin wrinkles in water to improve grip via vasoconstriction—an evolutionary advantage."},
+
+  {"id":"hist_1","category":"History","title":"Library of Alexandria","body":"It likely declined in multiple events, not a single fire; knowledge was dispersed over centuries."},
+  {"id":"hist_2","category":"History","title":"First computer bug","body":"A moth found in Harvard’s Mark II (1947) inspired the term 'bug' for a computer error."},
+
+  {"id":"psych_1","category":"Psychology","title":"Zeigarnik effect","body":"We remember unfinished tasks better than finished ones—use it for quick re-entry into work."},
+  {"id":"psych_2","category":"Psychology","title":"IKEA effect","body":"We value things more when we’ve helped build them (like flat-pack furniture)."},
+
+  {"id":"lang_1","category":"Language","title":"Word: sonder","body":"n. The realization that each passerby has a life as vivid and complex as your own."},
+  {"id":"lang_2","category":"Language","title":"Why 'queue' looks odd","body":"It’s essentially 'Q' followed by silent letters; borrowed from French."},
+
+  {"id":"econ_1","category":"Economics","title":"Sunk cost fallacy","body":"Decide based on future value, not past expenses already paid."},
+  {"id":"econ_2","category":"Economics","title":"Giffen goods","body":"In rare cases, higher price can increase demand for inferior goods because of income effects."},
+
+  {"id":"cs_1","category":"Computer Science","title":"Binary search gotcha","body":"Use mid = low + (high - low) ~/ 2 to avoid overflow and off-by-one errors."},
+  {"id":"cs_2","category":"Computer Science","title":"Big-O intuition","body":"O(n log n) grows faster than O(n) but much slower than O(n²); algorithms often aim for O(n log n)."},
+
+  {"id":"health_1","category":"Health","title":"Microbreaks","body":"20–60 second breaks every 20–30 minutes reduce fatigue and improve accuracy."},
+  {"id":"geo_1","category":"Geography","title":"Largest desert","body":"Antarctica is the world’s largest desert by precipitation, not the Sahara."}
+]

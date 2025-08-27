@@ -3,6 +3,7 @@
 
         <!-- Mic permission for Notes/Transcribe -->
         <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.INTERNET" />
 
         <!-- Optional: remove if not actually querying external speech services -->
         <queries>

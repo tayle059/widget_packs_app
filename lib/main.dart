@@ -8,7 +8,9 @@ import 'habit_kicker_screen.dart';
 import 'top_news_screen.dart';
 import 'wellness_toolkit_screen.dart';
 import 'notes_transcribe_screen.dart';
-
+import 'learning_bits_screen.dart';
+import 'stock_option_screen.dart';
+import 'get_up_reminder_screen.dart';
 
 
 
@@ -46,11 +48,11 @@ class HomeScreen extends StatefulWidget {
     _WidgetSpec('Affirmation', Icons.wb_sunny_outlined, screen: const AffirmationScreen()),
     _WidgetSpec('Calming Session', Icons.self_improvement, screen: const CalmingSessionScreen()),
     _WidgetSpec('Habit Kicker', Icons.check_circle_outline, screen: const HabitKickerScreen()),
-    _WidgetSpec('Get Up Reminder', Icons.alarm),
+    _WidgetSpec('Get Up Reminder', Icons.alarm, screen: const GetUpReminderScreen()),
     _WidgetSpec('Water Intake', Icons.water_drop_outlined, screen: const WaterIntakeScreen()),
-    _WidgetSpec('Learning Bits', Icons.menu_book_outlined),
+    _WidgetSpec('Learning Bits', Icons.menu_book_outlined, screen: const LearningBitsScreen()),
     _WidgetSpec('Top News', Icons.article_outlined, screen: const TopNewsScreen()),
-    _WidgetSpec('Stock Option', Icons.show_chart),
+    _WidgetSpec('Stock Option', Icons.show_chart, screen: const StockOptionScreen()),
     _WidgetSpec('Feed the Pets', Icons.pets, screen: const FeedPetsScreen()),
     _WidgetSpec('Wellness Toolkit', Icons.favorite_border, screen: const WellnessToolkitScreen()),
     _WidgetSpec('Notes / Transcribe', Icons.mic_none, screen: const NotesTranscribeScreen()),
