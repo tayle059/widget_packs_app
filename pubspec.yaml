@@ -20,6 +20,9 @@ dependencies:
   url_launcher: ^6.3.1
   speech_to_text: ^7.3.0
   flutter_local_notifications: ^17.2.0
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+  audioplayers: ^6.0.0   # (check latest version)
 
 
 dev_dependencies:
@@ -31,3 +34,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/learning_bits.json
+    - assets/nature/
+    - assets/sounds/
+
+
+
+

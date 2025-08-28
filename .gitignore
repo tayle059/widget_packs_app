@@ -1,45 +1,69 @@
-# Miscellaneous
+# ── Misc / OS junk ─────────────────────────────────────────────────────────────
 *.class
 *.log
 *.pyc
 *.swp
+*.swo
+*.tmp
+*.orig
 .DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
+Thumbs.db
+ehthumbs.db
 migrate_working_dir/
 
-# IntelliJ related
+# ── Editors / IDEs ─────────────────────────────────────────────────────────────
 *.iml
 *.ipr
 *.iws
 .idea/
+# Keep VS Code project settings by default; uncomment to ignore:
+# .vscode/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
+# ── Flutter / Dart / Pub ───────────────────────────────────────────────────────
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
+.packages
 .pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
 /build/
-/coverage/
+coverage/
+**/generated_plugin_registrant.dart
 
-# Symbolication related
+# ── Android ────────────────────────────────────────────────────────────────────
+android/.gradle/
+android/local.properties
+android/key.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+# If you accidentally add signing keys, ignore these file types too:
+*.keystore
+*.jks
+
+# ── iOS ────────────────────────────────────────────────────────────────────────
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/ServiceDefinitions.json
+
+# ── macOS ──────────────────────────────────────────────────────────────────────
+macos/Pods/
+macos/Flutter/ephemeral/
+
+# ── Linux ──────────────────────────────────────────────────────────────────────
+linux/flutter/ephemeral/
+
+# ── Windows ────────────────────────────────────────────────────────────────────
+windows/flutter/ephemeral/
+
+# ── Web (usually small, but ignore the build cache if created) ─────────────────
+web/.dart_tool/
+
+# ── Symbolication / Obfuscation ────────────────────────────────────────────────
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
